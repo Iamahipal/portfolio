@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Nova | Creative Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Liquid Background Animation -->
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <h2 class="logo">Nova.</h2>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact" class="cta-btn">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+        <div class="glass-card hero-content">
+            <h1>Building <span class="highlight">Liquid</span> Digital Experiences.</h1>
+            <p>I am Alex Nova. A Full-Stack Developer designing the future of the web with transparency and flow.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="glass-card full-width">
+            <h2>About Me</h2>
+            <p>I specialize in creating visually stunning interfaces that don't compromise on performance. My philosophy is simple: code should be as fluid as water and as clear as glass.</p>
+            <div class="skills-grid">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Three.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">UI/UX</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2>Selected Works</h2>
+        <div class="grid-container">
+            <!-- Project 1 -->
+            <div class="glass-card project-card">
+                <div class="project-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Neon Dash</h3>
+                <p>A high-speed dashboard for crypto analytics featuring real-time websocket data.</p>
+                <a href="#" class="link-text">View Project &rarr;</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="glass-card project-card">
+                <div class="project-icon"><i class="fas fa-mountain"></i></div>
+                <h3>Zenith App</h3>
+                <p>Meditation application using generative audio and calm UI principles.</p>
+                <a href="#" class="link-text">View Project &rarr;</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="glass-card project-card">
+                <div class="project-icon"><i class="fas fa-cube"></i></div>
+                <h3>Glass UI Kit</h3>
+                <p>An open-source CSS library for creating glassmorphism effects easily.</p>
+                <a href="#" class="link-text">View Project &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="glass-card contact-form">
+            <h2>Let's Connect</h2>
+            <p>Have a project in mind? Send me a signal.</p>
+            <form>
+                <input type="text" placeholder="Your Name" class="glass-input">
+                <input type="email" placeholder="Your Email" class="glass-input">
+                <textarea placeholder="Message" rows="4" class="glass-input"></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alex Nova. Crafted with Liquid Glass.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
